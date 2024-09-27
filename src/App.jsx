@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import About from './components/About/About'
+import Thanks from './components/Thanks/Thanks'
 
 function App() {
 
   return (
     <div ClassName='App'>
-      <About />
+      <Thanks />
     </div>
   )
 }
