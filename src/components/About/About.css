@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-* {
-    background-color: azure;
-}
 
 body {
     color: #666666;
@@ -190,7 +187,7 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../../assets/carroveloz.jpeg);
+    background-image: url(../../assets/carro-formula-e-2020-2021.jpg.webp);
     height: auto;
     background-size: 100%;
     padding: 10px 0px 25px 0px;
@@ -267,10 +264,10 @@ button {
 #main_slider .carousel-control-prev {
     width: 45px;
     height: 45px;
-    background: #fff;
+    background: #333;
     opacity: 1;
     font-size: 30px;
-    color: #333333;
+    color: #fff;
     margin: 0 auto;
     z-index: 1;
     margin: 0 auto;
@@ -348,6 +345,11 @@ button {
     background-color: #3747f7;
 }
 
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* about section end */
 
 /* Sponsors */
@@ -357,7 +359,6 @@ button {
     content: '';
     width: 300px;
     height: 100%;
-    position: absolute;
     top: 0;
     z-index: 2;
 }
