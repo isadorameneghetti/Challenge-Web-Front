@@ -1,6 +1,6 @@
 import React from "react";
 import './Informations.css';
-import logo from '../../assets/Logo/logo.png';
+import logo from '../../../assets/Logo/logo.png';
 
 
 const Informations = () => {

@@ -7,9 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Footer = () => {
     return (
         <div>
-            <div className="container d-flex align-items-center bg-light">
-                <h2 className="w-100 text-center">Footer</h2>
-            </div>
 
             <footer className="footer-02">
                 <div className="site-section">

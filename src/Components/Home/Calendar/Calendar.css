@@ -1,15 +1,13 @@
 .cards {
     padding: 5rem;
     color: var(--white-color);
-    height: 100vh;
-    width: 100vw;
 }
 
 .card {
     width: 250px !important; 
     border-radius: 25px;
-    background-color: var(--white-color);
 }
+
 .image-content,
 .card-content {
     display: flex;

@@ -1,18 +1,25 @@
 import React from 'react';
-import Navbar from './Components/Navbar/Navbar';
-import Informations from './Components/Informations/Informations';
-import Footer from './Components/Footer/Footer';
-import Races from './Components/Races/races';
-import Carousel from './Components/Carousel/Carousel';
+import Navbar from './Components/Home/Navbar/Navbar';
+import Informations from './Components/Home/Informations/Informations';
+import Calendar from './Components/Home/Calendar/Calendar';
+import Carousel from './Components/Home/Carousel/Carousel';
+import Footer from './Components/Home/Footer/Footer';
+import Races from './Components/Home/Races/Races';
+
 
 const App = () => {
   return (
-    <Informations />,
-    <Navbar />,
-    <Footer />,
-    <Races />,
-    <Carousel />
-  )
-}
+    <div>
+      <Navbar />
+      <main>
+        <Informations />
+        <Races />
+        <Calendar />
+        <Carousel />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;

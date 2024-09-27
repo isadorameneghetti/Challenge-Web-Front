@@ -1,20 +1,22 @@
 import React from "react";
-import './Races.css';
+import './Calendar.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'; 
-import jeddah from '../../assets/Calendar/jeddah.png';
-import miami from '../../assets/Calendar/miami.png';
-import monaco from '../../assets/Calendar/monaco.png';
-import tokyo from '../../assets/Calendar/tokyo.jpg';
-import shanghai from '../../assets/Calendar/shanghai.png';
-import jakarta from '../../assets/Calendar/jakarta.png';
-import berlin from '../../assets/Calendar/berlin.png';
-import london from '../../assets/Calendar/london.png';
+import jeddah from '../../../assets/Calendar/jeddah.png';
+import miami from '../../../assets/Calendar/miami.png';
+import monaco from '../../../assets/Calendar/monaco.png';
+import tokyo from '../../../assets/Calendar/tokyo.jpg';
+import shanghai from '../../../assets/Calendar/shanghai.png';
+import jakarta from '../../../assets/Calendar/jakarta.png';
+import berlin from '../../../assets/Calendar/berlin.png';
+import london from '../../../assets/Calendar/london.png';
+import brasil from '../../../assets/Calendar/brasil.webp';
+import mexico from '../../../assets/Calendar/mexico.webp';
 
-const racesData = [
+const CalendarData = [
     { image: jeddah, place: 'Jeddah', date: 'February 15, 2025' },
     { image: miami, place: 'Miami', date: 'April 12, 2025' },
     { image: monaco, place: 'Monaco', date: 'May 3, 2025' },
@@ -37,7 +39,7 @@ const PrevArrow = ({ onClick }) => (
   </div>
 );
 
-const Races = () => {
+const Calendar = () => {
     const settings = {
         dots: false,
         infinite: false,
@@ -76,27 +78,29 @@ const Races = () => {
     };
 
     return (
-        <div className="cards">
-
-            <Slider {...settings}>
-                {racesData.map((race, index) => (
-                    <div className="card" key={index}>
-                        <div className="image-content">
-                            <span className="overlay"></span>
-                            <div className="card-image">
-                                <img src={race.image} alt={race.place} className="card-img" />
+        <section className="calendar" id="calendar">
+            <div className="cards">
+                <Slider {...settings}>
+                    {CalendarData.map((race, index) => (
+                        <div className="card" key={index}>
+                            <div className="image-content">
+                                <span className="overlay"></span>
+                                <div className="card-image">
+                                    <img src={race.image} alt={race.place} className="card-img" />
+                                </div>
+                            </div>
+                            <div className="card-content">
+                                <h2 className="place">{race.place}</h2>
+                                <p className="description">{race.date}</p>
+                                <button className="button" aria-label={`More info about ${race.place}`}>Soon!</button>
                             </div>
                         </div>
-                        <div className="card-content">
-                            <h2 className="place">{race.place}</h2>
-                            <p className="description">{race.date}</p>
-                            <button className="button" aria-label={`More info about ${race.place}`}>Soon!</button>
-                        </div>
-                    </div>
-                ))}
-            </Slider>
-        </div>
+                    ))}
+                </Slider>
+            </div>
+        </section>
     );
 }
 
-export default Races;
+
+export default Calendar;
