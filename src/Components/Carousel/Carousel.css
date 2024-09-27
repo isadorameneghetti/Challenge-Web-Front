@@ -1,28 +1,3 @@
-:root {
-    --white-color: #ffffff;
-    --shadow: rgba(0, 0, 0, .1);
-
-    /* Times */
-    --cupra: #194997;
-    --andretti: #ed3124;
-    --penske: #cba65f;
-    --envision: #00be26;
-    --ert: #3c3c3c;
-    --jaguar: #000000;
-    --mahindra: #dd052b;
-    --maserati: #001489;
-    --neom: #ff8000;
-    --nissan: #c3002f;
-    --porsche: #d5001c;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .carousel {
     height: 100vh;
 }

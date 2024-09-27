@@ -7,11 +7,11 @@ import Carousel from './Components/Carousel/Carousel';
 
 const App = () => {
   return (
-    <Carousel />,
     <Informations />,
     <Navbar />,
     <Footer />,
-    <Races />
+    <Races />,
+    <Carousel />
   )
 }
 
