@@ -1,5 +1,20 @@
+.text-content {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content h2 {  
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--main-color);
+    text-shadow: var(--shadow);
+}
+
+
 .wrapper{
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 10px 10%;
 }
 
@@ -88,10 +103,12 @@
     cursor: pointer;
     margin-top: -3px;
 }
+
 .box:hover img{
     transform: scale(1.1);
     filter: grayscale(100%);
 }
+
 .box:hover .overlay{
     height: 100%;
 }
