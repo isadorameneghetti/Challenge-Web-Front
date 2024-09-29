@@ -16,7 +16,7 @@ const Navbar = () => {
 
             <a href="/" className="logo">Formula E</a>
 
-            <button className="btn-login">Login</button>
+            <a href="/login"><button className="btn-login">Login</button></a>
         </header>
     )
 }
