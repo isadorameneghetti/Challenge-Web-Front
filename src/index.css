@@ -10,12 +10,13 @@
   --second-main-color: #28376f;
   --second-shadow: #0011ff73;
   --white-shadow: rgba(255, 255, 255, 0.1);
+  --chat-color: #ffffff31;
 
       /* Times */
       --cupra: #194997;
       --andretti: #ed3124;
       --penske: #cba65f;
-      --envision: #00be26;
+      --envision: hsl(132, 100%, 37%);
       --ert: #3c3c3c;
       --jaguar: #000000;
       --mahindra: #dd052b;
@@ -39,5 +40,5 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }

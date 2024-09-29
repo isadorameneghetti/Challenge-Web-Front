@@ -1,0 +1,6 @@
+.screens {
+    margin-top: 125px;
+    display: flex;
+    flex-direction: row;
+}
+

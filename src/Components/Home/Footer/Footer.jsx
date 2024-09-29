@@ -19,7 +19,7 @@ const Footer = () => {
                         </div>
                         <div className="row">
                             <div className="col-sm">
-                                <a href="#" className="footer-logo">Formula E</a>
+                                <a href="/" className="footer-logo">Formula E</a>
                                 <p className="copyright">
                                     <small>&copy; 2024</small>
                                 </p>
@@ -27,16 +27,16 @@ const Footer = () => {
                             <div className="col-sm">
                                 <h3>Team</h3>
                                 <ul className="list-unstyled links">
-                                    <li><a href="#">Teams</a></li>
-                                    <li><a href="#">Streaming</a></li>
+                                    <li><a href="/">Teams</a></li>
+                                    <li><a href="/">Streaming</a></li>
                                 </ul>
                             </div>
                             <div className="col-sm">
                                 <h3>Company</h3>
                                 <ul className="list-unstyled links">
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">News</a></li>
+                                    <li><a href="/">About</a></li>
+                                    <li><a href="/">Contact</a></li>
+                                    <li><a href="/">News</a></li>
                                 </ul>
                             </div>
                             <div className="col-sm">

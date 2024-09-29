@@ -1,25 +1,24 @@
 import React from 'react';
-import Navbar from './Components/Home/Navbar/Navbar';
-import Informations from './Components/Home/Informations/Informations';
-import Calendar from './Components/Home/Calendar/Calendar';
-import Carousel from './Components/Home/Carousel/Carousel';
-import Footer from './Components/Home/Footer/Footer';
-import Races from './Components/Home/Races/Races';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home/Home';
+// import Contato from './Components/Contato/Contato';
+// import Login from './Components/Login/Login';
+// import Sobre from './Components/Sobre/Sobre';
+import Streaming from './Components/Streaming/Streaming';
 
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Navbar />
-      <main>
-        <Informations />
-        <Races />
-        <Calendar />
-        <Carousel />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/contato" element={<Contato />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/sobre" element={<Sobre />} /> */}
+        <Route path="/streaming" element={<Streaming/>} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
