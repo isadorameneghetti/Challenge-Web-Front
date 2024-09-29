@@ -15,8 +15,8 @@ const Login = () => {
     };
 
   return (
-    <section className="login" id="login">
-    <div className="container">
+    <section className="Login" id="login">
+    <div className="containerl">
         <form onSubmit={handleSubmit}>
             <h1>Access the live stream</h1>
             <div className="input-field">

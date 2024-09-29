@@ -15,8 +15,8 @@ const Register = () => {
     };
 
   return (
-    <section className="register" id="register">
-    <div className="container">
+    <section className="Register" id="register">
+    <div className="containerr">
         <form onSubmit={handleSubmit}>
             <h1>Register</h1>
             <div className="input-field">

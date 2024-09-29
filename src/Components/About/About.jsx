@@ -29,7 +29,7 @@ import logo18 from '../../assets/FIA-Emblem-Lockup.png';
 
 function About() {
   return  (
-    <div>
+    <div className='About'>
       {/* Banner Section */}
       <div className="banner_section layout_padding">
         <div className="container">
