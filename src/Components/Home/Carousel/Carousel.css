@@ -196,3 +196,41 @@
 .item:nth-child(11) .bg {
     background: var(--porsche);
 }
+
+@media (max-width: 768px) {
+    .carousel {
+      height: 80vh;
+    }
+    .item .info-box {
+      width: 350px;
+      height: 220px;
+    }
+    .item .img-box {
+      width: 600px;
+      height: 450px;
+    }
+    .thumb {
+      right: 2%;
+    }
+    .thumb li {
+      width: 50px;
+      height: 50px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .carousel {
+      height: 60vh;
+    }
+    .item .info-box {
+      width: 250px;
+      height: 180px;
+    }
+    .item .img-box {
+      width: 400px;
+      height: 300px;
+    }
+    .thumb {
+      right: 1%;
+    }
+}

@@ -4,3 +4,16 @@
     flex-direction: row;
 }
 
+@media (max-width: 768px) {
+    .screens {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .screens {
+        margin-top: 70px;
+        flex-direction: column;
+    }
+}
+

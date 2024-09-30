@@ -115,3 +115,31 @@
 .next {
     right: 10px; 
 }
+
+@media (max-width: 768px) {
+    .card {
+      width: 200px !important; 
+    }
+    .card-image {
+      height: 120px;
+      width: 120px;
+    }
+    .card-image .card-img {
+      height: 100%;
+      width: 100%;
+    }
+}
+  
+@media (max-width: 480px) {
+    .card {
+      width: 150px !important; 
+    }
+    .card-image {
+      height: 100px;
+      width: 100px;
+    }
+    .card-image .card-img {
+      height: 100%;
+      width: 100%;
+    }
+}

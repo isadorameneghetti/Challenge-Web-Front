@@ -77,3 +77,42 @@ footer{
     margin: 0px 5px;
 }
  
+@media only screen and (max-width: 768px) {
+    .footerContainer {
+        padding: 40px 20px 10px;
+    }
+    .socialIcons a {
+        padding: 10px;
+        margin: 5px;
+    }
+    .footerNav ul li a {
+        margin: 10px;
+        font-size: 1.1em;
+    }
+    .footerBottom {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    .footerContainer {
+        padding: 30px 20px 10px;
+    }
+    .socialIcons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .socialIcons a {
+        margin: 5px;
+    }
+    .footerNav {
+        margin: 20px 0;
+    }
+    .footerNav ul li a {
+        margin: 10px;
+        font-size: 1em;
+    }
+    .footerBottom {
+        padding: 10px;
+    }
+}

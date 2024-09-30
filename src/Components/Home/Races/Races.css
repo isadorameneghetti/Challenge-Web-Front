@@ -113,3 +113,26 @@
     height: 100%;
 }
 
+@media (max-width: 768px) {
+    .box-area {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .box {
+      height: 400px;
+    }
+    .box img {
+      height: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box-area {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .box {
+      height: 300px;
+    }
+    .box img {
+      height: 100%;
+    }
+  }

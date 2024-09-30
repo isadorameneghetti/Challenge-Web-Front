@@ -16,3 +16,20 @@
     box-shadow: 0px 4px 8px var(--shadow);
     margin-left: 100px; 
 }
+
+@media (max-width: 768px) {
+    .video {
+        width: 100%;
+    }
+    .video-player {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-player {
+        flex-direction: column;
+        align-items: center;
+    }
+}
