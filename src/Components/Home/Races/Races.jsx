@@ -42,7 +42,7 @@ const Races = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Races
+export default Races;

@@ -1,5 +1,5 @@
 import {FaUser, FaLock, FaPhone} from "react-icons/fa";
-import {useState} from "react"
+import {useState} from "react";
 import "./Register.css";
 
 const Register = () => {
@@ -45,7 +45,7 @@ const Register = () => {
         </form>
     </div>
     </section>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;

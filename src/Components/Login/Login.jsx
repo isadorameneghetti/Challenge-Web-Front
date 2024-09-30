@@ -1,5 +1,5 @@
 import {FaUser, FaLock} from "react-icons/fa";
-import {useState} from "react"
+import {useState} from "react";
 import "./Login.css";
 import { Link } from 'react-router-dom';
 
@@ -41,7 +41,7 @@ const Login = () => {
         </form>
     </div>
     </section>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
