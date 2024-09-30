@@ -27,8 +27,8 @@
 1. **Clonar o repositório**:
 
    ```bash
-   git clone https://github.com/isadorameneghetti/Challenge-WEB
-   cd Challenge-WEB
+   git clone https://github.com/isadorameneghetti/Challenge-Web-Front
+   cd Challenge-Web-Front
 
 2. **Instalar dependências**:
 
