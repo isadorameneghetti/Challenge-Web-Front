@@ -1,3 +1,6 @@
+body {
+    background-color: var(--main-color);
+}
 .screens {
     margin-top: 145px;
     display: flex;
