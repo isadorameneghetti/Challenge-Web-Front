@@ -6,7 +6,7 @@ import Informations from './Informations/Informations';
 import Chat from './Chat/Chat';
 import Video from './Video/Video'
 import Classification from './Classification/Classification';
-import PowerBi from './PowerBi/PowerBi';
+import Dashboard from './Dashboard/Dashboard';
 import Footer from './Footer/Footer';
 
 const Streaming = () => {
@@ -20,7 +20,7 @@ const Streaming = () => {
             <Chat />
         </div>
         <div className="statistcsF">
-            <PowerBi />
+            <Dashboard />
             <Footer />
         </div>
     </main>
