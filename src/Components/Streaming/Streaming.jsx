@@ -11,7 +11,7 @@ import Footer from './Footer/Footer';
 
 const Streaming = () => {
   return (
-    <main>
+    <main className="body">
         <Navbar />
         <div className="screens">
             <Informations />

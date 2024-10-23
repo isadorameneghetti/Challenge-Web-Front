@@ -1,5 +1,5 @@
 footer{
-    background-color: var(--main-color);
+    background-color: #484BF0;
 }
 
 .footerContainer{
@@ -22,7 +22,7 @@ footer{
 
 .socialIcons a .Icon{
     font-size: 2em;
-    color: var(--main-color);
+    color: #484BF0;
     opacity: 0.9;
 }
 
