@@ -13,15 +13,15 @@
     color: var(--white-color);
     text-align: center;
     margin-bottom: 25px;
-    margin-left: 75px;
+    margin-left: 0px;
 }
 
 .chat-box {
     margin-top: -15px;
     height: 380px;
-    background: var(--chat-color);
+    background: #fff;
     border-radius: 15px;
-    margin-left: 75px;
+    margin-left: 0px;
 }
 
 .message-box {
@@ -39,6 +39,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
 }
 
 .input-box input {
@@ -71,3 +72,90 @@
     background: var(--white-color);
     color: var(--main-color);
 }
+
+.boxi{
+  width:100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  overflow-y: scroll !important;
+  position: relative;
+  height: 250px; 
+  width: 400px; 
+  background: rgb(0, 145, 255);
+  box-sizing: border-box;
+  padding: 15px; 
+  transition: .5s;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+}
+
+
+.message{
+  border-radius:15px;
+  padding: 5px;
+  margin-top: 20px;
+}
+.person-a .message{
+  text-align: start;
+  font-size: 12px;
+  background:#f8f8f8;
+}
+.person-a{
+  display:flex;
+  align-items:flex-end;
+}
+.icon{
+  --size:40px;
+  width:var(--size);
+  height:var(--size);
+background:url(https://i.ibb.co/vB9B6G8/mWDLI93.gif);
+  background-position:center;
+  background-size:cover;
+  border-radius:100%;
+  margin-right:.8em;
+  position:relative;
+}
+.icon::after{
+  content:' ';
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:lightgreen;
+  border-radius:100%;
+  bottom:0;
+  right:0;
+}
+
+.message svg{
+  height:26px;
+  vertical-align:middle;
+}
+.last{
+  width:auto;
+}
+
+/* Barra de rolagem geral */
+.boxi::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Cor do trilho da barra de rolagem (o fundo) */
+  .boxi::-webkit-scrollbar-track {
+    background: #c9efffc3;
+    border-radius: 10px; /* Arredonda as bordas da barra de rolagem */
+  }
+  
+  /* Cor e formato da barra de rolagem */
+  .boxi::-webkit-scrollbar-thumb {
+    background-color: #6586ec;
+    border-radius: 10px; /* Arredonda a própria barra */
+    border: 2px solid #c9f1ff; /* Cria um espaçamento entre a barra e o trilho */
+  }
+  
+  /* Efeito de hover (quando o mouse passa em cima da barra de rolagem) */
+  .boxi::-webkit-scrollbar-thumb:hover {
+    background-color: #143ec8cf;
+  }

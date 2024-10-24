@@ -1,14 +1,17 @@
 .Classification {
-    display: flex;
     text-align: center;
     justify-content: center;
     margin-top: 160px;
     align-items: center;
     height: 200px;
     width: 200px;
+	position: absolute;
+	left: 70px;
+	top: 120px;
+	z-index: 99;
 }
 .main-container {
-    display: flex;
+	display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
@@ -24,7 +27,7 @@
 }
 
 .pilots i {
-	color: #fff;
+	color: #000;
 	font-size: 20px;
 	margin-left: -50px;
 }
@@ -34,45 +37,46 @@
 	justify-content: center;
 	align-items: center;
 	width: 200px;
-	margin-bottom: -45px;
+	margin-bottom: -20px;
 	z-index: 99;
 }
 
+.fa-eye {
+	color: #000;
+	font-size: 20px;
+	margin-left: -50px;
+}
+
 .text h2{
-	margin-bottom: 15px;
+	margin-top: -10px;
 }
 
 .main-box {
+	cursor: pointer;
     position: relative;
-    height: 120px; 
+    height: 50px; 
     width: 120px; 
-    background: var(--mahindra);
+    background: rgba(240, 243, 245, 0.767);
     main-box-sizing: border-main-box;
-    padding: 15px; 
+    padding: 5px; 
     transition: .5s;
     overflow: hidden;
-    margin: 20px;
     text-align: center;
     border-radius: 10px;
     transition: all 0.6s ease;
 }
 
-.main-box p {
-	color: var(--white-color);
-    margin-top: -30px;
-	font-size: 16px;
-}
-
 .main-box h3 {
-	font-size: 19px;
+	font-size: 15px;
 	text-transform: uppercase;
-	color: var(--white-color);
+	color: #000;
+	font-weight: bold;
 }
 
 .main-box h2 {
-	font-size: 30px;
-	text-transform: uppercase;
-	color: var(--white-color);
+	font-size: 17px;
+	color: #000;
+	font-weight: bold;
 }
 
 .main-box:before, .main-box:after {

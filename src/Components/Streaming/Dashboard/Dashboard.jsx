@@ -69,19 +69,19 @@ const Dashboard = () => {
                 </div>
 
                 <div className="box">
-                    <h3>Potência do Motor</h3>
+                    <h3>Engine Power</h3>
                     <span></span>
                     <h2>{enginePower} kW</h2>
-                    <p>Eixo Traseiro: 350 kW</p>
-                    <p>Eixo Frontal: 250 kW</p>            
+                    <p>Rear Axle: 350 kW</p>
+                    <p>Front Axis: 250 kW</p>            
                 </div>
 
                 <div className="box">
                     <span></span>
-                    <h3>Estado da Bateria</h3>
+                    <h3>Battery Status</h3>
                     <div className="main-3">
                         <h2>{batteryLevel.toFixed(2)}%</h2>
-                        <p>≅ 25 a 30 minutos</p>
+                        <p>≅ 25 a 30 minutes</p>
                     </div>
                 </div>
 
@@ -100,7 +100,7 @@ const Dashboard = () => {
             <div className="container">
                 <div className="box center">
                     <span></span>
-                    <h3>Frequência Cardíaca</h3>
+                    <h3>Heart Rate</h3>
                     <img src={freq} alt="Heart Rate" />
                     <div className="main-5">
                         <p>{heartRate} bpm</p>
@@ -109,7 +109,7 @@ const Dashboard = () => {
 
                 <div className="box">
                     <span></span>
-                    <h3>Oxigênio no Sangue</h3>
+                    <h3>Blood Oxygen</h3>
                     <div className="main-6">
                         <h2>{oxygenLevel}%</h2>
                     </div>
@@ -117,7 +117,7 @@ const Dashboard = () => {
 
                 <div className="box">
                     <span></span>
-                    <h3>Temperatura do Carro</h3>
+                    <h3>Car Temperature</h3>
                     <div className="main-7">
                         <h2>{carTemperature}°C</h2>
                     </div>
@@ -125,11 +125,11 @@ const Dashboard = () => {
 
                 <div className="box">
                     <span></span>
-                    <h3>Pilotos Próximos</h3>
+                    <h3>Nearby Pilots</h3>
                     <div className="main-8">
-                        <h2>Frente</h2>
+                        <h2>Front</h2>
                         <p>S. Fenestraz - Nissan e.dams</p>
-                        <h2>Atrás</h2>
+                        <h2>Back</h2>
                         <p>N. Cassidy - Jaguar Racing</p>
                     </div>
                 </div>
