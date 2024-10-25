@@ -123,3 +123,9 @@
 .main-box:hover span {
 	left: 110%;
 }
+
+@media (max-width: 768px) {
+	.container {
+		flex-wrap: wrap;
+	}
+}

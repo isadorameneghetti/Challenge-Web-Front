@@ -1,161 +1,204 @@
+/* Background geral */
 .background {
-    width: 30%;
-    text-align: center;
-    background: var(--main-color);
-    padding: 10px;
-}
-.chat {
-    margin-right: 50px;
-}
-
-.chat h2 {
-    font-size: 2em;
-    color: var(--white-color);
-    text-align: center;
-    margin-bottom: 25px;
-    margin-left: 0px;
-}
-
-.chat-box {
-    margin-top: -15px;
-    height: 380px;
-    background: #fff;
-    border-radius: 15px;
-    margin-left: 0px;
-}
-
-.message-box {
-    position: relative;
-    width: 100%;
-    margin: 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.input-box {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.input-box input {
-    height: 50px;
-    background: transparent;
-    outline: none;
-    font-size: 1em;
-    color: var(--white-color);
-    font-weight: 600;
-    border: 2px solid var(--white-color);
-    border-radius: 6px;
-    margin-left: 75px;
-    margin-right: 10px;
-}
-
-.message-box button {
-    height: 50px;
-    background: transparent;
-    border: 2px solid var(--white-color);
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: var(--white-color);
-    font-weight: 500;
-    transition: .5s;
-}
-
-.message-box button:hover {
-    background: var(--white-color);
-    color: var(--main-color);
-}
-
-.boxi{
-  width:100% !important;
-  height: 100% !important;
-  margin: 0 !important;
-  overflow-y: scroll !important;
-  position: relative;
-  height: 250px; 
-  width: 400px; 
-  background: rgb(0, 145, 255);
-  box-sizing: border-box;
-  padding: 15px; 
-  transition: .5s;
-  overflow: hidden;
-  margin: 20px;
+  width: 30%;
   text-align: center;
-  border-radius: 10px;
-  transition: all 0.6s ease;
+  background: #100B25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
+/* Container do Chat */
+.chat {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
 
-.message{
-  border-radius:15px;
-  padding: 5px;
+/* Título no Chat */
+.boxi h3 {
+  font-size: 17px;
+  margin-top: -15px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Caixa de mensagens */
+.chat-box {
+  height: 450px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #6586ec #c9efffc3; /* Firefox */
+}
+
+/* Estilo da barra de rolagem em .chat-box */
+.chat-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+  background: #c9efffc3;
+  border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #6586ec;
+  border-radius: 10px;
+  border: 2px solid #c9f1ff;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background-color: #143ec8cf;
+}
+
+/* Pessoas e ícones */
+.person-a {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.icon {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  background: url(https://i.ibb.co/vB9B6G8/mWDLI93.gif);
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.icon::after {
+  content: ' ';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: lightgreen;
+  border-radius: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+/* Mensagens */
+.message {
+  background-color: #e4e6eb;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  text-align: start;
+}
+
+.last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.message svg {
+  height: 26px;
+  vertical-align: middle;
+}
+
+/* Caixa de entrada (input) */
+.chat-input-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
   margin-top: 20px;
 }
-.person-a .message{
-  text-align: start;
-  font-size: 12px;
-  background:#f8f8f8;
-}
-.person-a{
-  display:flex;
-  align-items:flex-end;
-}
-.icon{
-  --size:40px;
-  width:var(--size);
-  height:var(--size);
-background:url(https://i.ibb.co/vB9B6G8/mWDLI93.gif);
-  background-position:center;
-  background-size:cover;
-  border-radius:100%;
-  margin-right:.8em;
-  position:relative;
-}
-.icon::after{
-  content:' ';
-  position:absolute;
-  width:10px;
-  height:10px;
-  background:lightgreen;
-  border-radius:100%;
-  bottom:0;
-  right:0;
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 5px 10px;
 }
 
-.message svg{
-  height:26px;
-  vertical-align:middle;
-}
-.last{
-  width:auto;
+.emoji-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 5px;
 }
 
-/* Barra de rolagem geral */
+.chat-input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 50px;
+  flex: 1;
+}
+
+.send-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  margin-left: 5px;
+}
+
+/* Estilo do Box de mensagens */
+.boxi {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #6586ec #c9efffc3; /* Firefox */
+}
+
+/* Estilo da barra de rolagem em .boxi */
 .boxi::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
+}
+
+.boxi::-webkit-scrollbar-track {
+  background: #c9efffc3;
+  border-radius: 10px;
+}
+
+.boxi::-webkit-scrollbar-thumb {
+  background-color: #6586ec;
+  border-radius: 10px;
+  border: 2px solid #c9f1ff;
+}
+
+.boxi::-webkit-scrollbar-thumb:hover {
+  background-color: #143ec8cf;
+}
+
+@media (max-width: 768px) {
+  .background {
+    margin-top: 50px;
   }
-  
-  /* Cor do trilho da barra de rolagem (o fundo) */
-  .boxi::-webkit-scrollbar-track {
-    background: #c9efffc3;
-    border-radius: 10px; /* Arredonda as bordas da barra de rolagem */
+  .person-a {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
-  
-  /* Cor e formato da barra de rolagem */
-  .boxi::-webkit-scrollbar-thumb {
-    background-color: #6586ec;
-    border-radius: 10px; /* Arredonda a própria barra */
-    border: 2px solid #c9f1ff; /* Cria um espaçamento entre a barra e o trilho */
-  }
-  
-  /* Efeito de hover (quando o mouse passa em cima da barra de rolagem) */
-  .boxi::-webkit-scrollbar-thumb:hover {
-    background-color: #143ec8cf;
-  }
+}

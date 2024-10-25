@@ -5,7 +5,7 @@ import videoFile from '../../../assets/Video/video.mp4';
 const Video = () => {
     return (
         <div className="video">
-            <h1 className="race">You are watching Formula E</h1>
+            <h1 className="race">You are watching Formula E 🏁</h1>
             <video 
                 src={videoFile} 
                 autoPlay 

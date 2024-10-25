@@ -3,7 +3,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: #100B25;
     position: relative; 
     flex-direction: column;
 }
@@ -15,7 +15,7 @@
 }
 
 .video-player {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 80%;
     display: flex;
     justify-content: end;
@@ -26,7 +26,12 @@
 
 @media (max-width: 768px) {
     .video {
+        text-align: center;
+        margin-top: 50px;
         width: 100%;
+    }
+    .video h1 {
+        font-size: 20px;
     }
     .video-player {
         width: 100%;

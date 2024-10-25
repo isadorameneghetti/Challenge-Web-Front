@@ -1,5 +1,5 @@
 .body {
-    background-color: var(--main-color);
+    background-color: #100B25;
 }
 .screens {
     margin-top: 145px;
@@ -10,6 +10,8 @@
 @media (max-width: 768px) {
     .screens {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
