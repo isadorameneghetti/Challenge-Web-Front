@@ -117,10 +117,9 @@ footer{
     }
 }
 
-@media (max-width: 480px) {
-    .footerNav {
+@media (max-width: 768px) {
+    .column-footer {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
 }
-
 }

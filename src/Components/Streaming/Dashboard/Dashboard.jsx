@@ -28,7 +28,7 @@ const Dashboard = () => {
             }));
 
             
-            setEnginePower(prev => prev + Math.floor(Math.random() * 5) - 2);
+            setEnginePower(prev => prev + Math.floor(Math.random() * 5) - 5);
 
             
             setBatteryLevel(prev => prev - Math.random().toFixed(2) * 0.1);

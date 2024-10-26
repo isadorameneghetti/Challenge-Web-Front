@@ -14,7 +14,7 @@ const Footer = () => {
                     <a href="https://www.youtube.com/channel/UC-DuRqsBQOEk_5o1q4Ze-Fg"><FontAwesomeIcon icon={faYoutube} className="Icon"/></a>
                 </div>
                 <div className="footerNav">
-                    <ul><li><a href="/home">Home</a></li>
+                    <ul className="column-footer"><li><a href="/home">Home</a></li>
                         <li><a href="https://www.fiaformulae.com/en/teams">Teams</a></li>
                         <li><a href="/streaming">Streaming</a></li>
                         <li><a href="/about">About</a></li>
