@@ -17,28 +17,28 @@ const Chat = () => {
                     <div className="boxi">
                         <h3>Chat</h3>
                         <div className="person-a">
-                            <div className="icon"></div>
+                            <div className="icon_chat"></div>
                             <div className="message">
                                 Vai Edoardo!, você é o melhor piloto do mundo!
                             </div>
                         </div>
 
                         <div className="person-a">
-                            <div className="icon"></div>
+                            <div className="icon_chat"></div>
                             <div className="message">
                                 Aposto em você!
                             </div>
                         </div>
 
                         <div className="person-a">
-                            <div className="icon"></div>
+                            <div className="icon_chat"></div>
                             <div className="message">
                                 Meu Fanboost vai para você!
                             </div>
                         </div>
 
                         <div className="person-a">
-                            <div className="icon"></div>
+                            <div className="icon_chat"></div>
                             <div className="message last">
                                 <svg className="cat" viewBox="0 0 512 512">
                                     <path style={{ fill: "#FFC850" }} d="M444.379,3.741c10.828-8.798,27.018-1.092,27.018,12.859v222.01l-182.26-107.699L444.379,3.741z" />

@@ -65,7 +65,7 @@
   margin-bottom: 10px;
 }
 
-.icon {
+.icon_chat {
   --size: 40px;
   width: var(--size);
   height: var(--size);
@@ -77,7 +77,7 @@
   position: relative;
 }
 
-.icon::after {
+.icon_chat::after {
   content: ' ';
   position: absolute;
   width: 10px;
